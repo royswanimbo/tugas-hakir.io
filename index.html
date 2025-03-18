@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+  <!-- sweetalert2 css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.2/sweetalert2.min.css">
+
+  <!-- my css -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Website Kedai Kopi Nogi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <!-- navbar start -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">Kedai <span>Kopi</span> Nogi</a>
+    <div class="navbar-list-group" id="navMenu">
+      <a href="#home" class="navbar-list">Home</a>
+      <a href="#about" class="navbar-list">Tentang Kami</a>
+      <a href="#product" class="navbar-list">Produk</a>
+      <a href="#contact" class="navbar-list">Kontak</a>
+    </div>
+    <div class="navbar-icon">
+      <i data-feather="search" class="icon btn-modal" id="search" data-modal="searchModal"></i>
+      <i data-feather="shopping-cart" class="icon btn-modal" id="shopping-cart" data-modal="tableModal"></i>
+      <i data-feather="menu" class="icon" id="hamburger" onclick="toggleMenu()">☰</i>
+    </div>
+  </nav>
+  <!-- navbar end -->
+
+  <!-- section hero start -->
+  <section class="hero" id="home">
+    <div class="content">
+      <h1>Mari Nikmati Secangkir <span>Kopi</span> Nogi</h1>
+      <p>Nikmati berbagai pilihan kopi spesial kami yang diracik dengan cinta dan dedikasi.</p>
+      <a href="#product" class="button">Beli Sekarang</a>
+    </div>
+  </section>
+  <!-- section hero end -->
+
+  <!-- section about start -->
+  <section class="about" id="about">
+    <h2>Tentang <span>Kami</span></h2>
+    <div class="row">
+      <div class="image-wrapper">
+        <img src="images/about.jpg" width="100" alt="tentang kami" class="image">
+      </div>
+      <div class="content">
+        <h3>Mengapa Harus Memilih Kedai Kopi Nogi?</h3>
+        <p>✅Kopi Berkualitas Tinggi
+          Kami menyajikan kopi terbaik yang dipilih langsung dari biji kopi pilihan, diproses dengan cermat untuk
+          menghadirkan cita rasa yang khas dan autentik.</p>
+        <p>✅Suasana Nyaman & Hangat
+          Kedai Kopi Nogi menawarkan tempat yang nyaman dengan desain yang menarik, cocok untuk bersantai, bekerja, atau
+          berkumpul bersama teman dan keluarga.</p>
+        <p>✅Pelayanan Ramah & Profesional
+          Tim kami selalu siap melayani dengan sepenuh hati, memberikan pengalaman terbaik bagi setiap pelanggan yang
+          datang.</p>
+        <p>✅Dukungan untuk Komunitas Lokal
+          Kami bangga bekerja sama dengan petani kopi lokal dan memberdayakan anak muda Papua, termasuk inspirasi dari
+          Seorang Sepi Wanimbo, yang bekerja keras di kedai ini.</p>
+        <p>✅Menu Variatif & Terjangkau
+          Dari kopi hitam klasik hingga varian kopi modern, serta camilan lezat yang cocok menemani waktu santai Anda,
+          semua tersedia dengan harga yang bersahabat.</p>
+      </div>
+    </div>
+  </section>
+  <!-- section about end -->
+
+  <!-- section menu start -->
+  <section class="product" id="product">
+    <div class="header">
+      <h2 style="text-align: center;">Menu Kedai Kopi Nogi</h2>
+      <div class="container">
+        <div class="product">
+          <img src="images/1.jpg" alt="Kopi Hitam">
+          <h3>Kopi Hitam</h3>
+          <p>Rp 15.000</p>
+          <button>Pesan</button>
+        </div>
+        <div class="product">
+          <img src="images/5.jpg" alt="Caffe Latte">
+          <h3>Caffe Latte</h3>
+          <p>Rp 22.000</p>
+          <button>Pesan</button>
+        </div>
+        <div class="product">
+          <img src="images/2.jpg" alt="Kopi Susu">
+          <h3>Kopi Susu</h3>
+          <p>Rp 20.000</p>
+          <button>Pesan</button>
+        </div>
+        <div class="product">
+          <img src="images/3.jpg" alt="Espresso">
+          <h3>Espresso</h3>
+          <p>Rp 18.000</p>
+          <button>Pesan</button>
+        </div>
+        <div class="product">
+          <img src="images/6.jpg" alt="Kopi Hitam">
+          <h3>Kopi Hitam</h3>
+          <p>Rp 15.000</p>
+          <button>Pesan</button>
+        </div>
+        <div class="product">
+          <img src="images/4.jpg" alt="Caffe Latte">
+          <h3>Caffe Latte</h3>
+          <p>Rp 22.000</p>
+          <button>Pesan</button>
+        </div>
+      </div>
+      <div class="card-container"></div>
+  </section>
+  <!-- section menu end -->
+
+  <!-- section contact start -->
+  <section class="contact" id="contact">
+    <div class="header">
+      <h2>
+        <h3>Jika Anda memiliki pertanyaan, ingin melakukan pemesanan, atau sekadar berbagi cerita, jangan ragu untuk
+          menghubungi kami!</h3>
+        <br>
+        📞 Telepon/WhatsApp: 082199837474
+        <br>
+        📧 Email: royswanimbo@cmail.com
+        <br>
+        📲 Media Sosial:
+        <br>
+        <div class="icon-content">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <br>
+      </h2>
+    </div>
+    <div class="row">
+      <div class="image-wrapper">
+        <img src="images/contact.jpg" alt="kontak kami" class="image">
+      </div>
+      <div class="form-wrapper">
+        <form action="" class="form">
+          <div class="form-group">
+            <label for="nama" class="label">Nama lengkap</label>
+            <input type="text" id="nama" class="input input-name" placeholder="Nama lengkap">
+          </div>
+          <div class="form-group">
+            <label for="email" class="label">Alamat email</label>
+            <input type="text" id="email" class="input input-email" placeholder="Alamat email">
+          </div>
+          <div class="form-group">
+            <label for="nomor" class="label">Nomor telepon</label>
+            <input type="number" id="nomor" class="input input-nomor" placeholder="No.telepon">
+          </div>
+          <button type="submit" class="button btn-submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- section contact end -->
+
+  <!-- footer start -->
+  <footer class="footer ">
+    <div class="wrapper ">
+      <a href="https://instagram.com/candradwicahyo18" target="_blank"><i data-feather="instagram"></i></a>
+      <a href="https://facebook.com/candradwicahyo18" target="_blank"><i data-feather="facebook"></i></a>
+      <a href="https://github.com/candradwicahyo" target="_blank"><i data-feather="github"></i></a>
+    </div>
+
+    <span>2025 <a href="https://github.com/candradwicahyo" target="_blank">roys wanimbo</a> | ©
+      2023</span>
+    <br>
+    <div class="icon-content ">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-whatsapp"></i>
+    </div>
+  </footer>
+</body>
+<!-- footer end -->
+<script>
+  function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("active");
+  }
+</script>
+
+<!-- feather icon -->
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+<script src="js/icon.js"></script>
+
+<!-- sweetalert2 js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.2/sweetalert2.min.js"></script>
+
+<!-- my javascript -->
+<script src="js/script.js"></script>
+
+
+</html>
